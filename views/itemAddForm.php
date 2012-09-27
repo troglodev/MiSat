@@ -23,7 +23,7 @@ show_title(6, null);
         <textarea name="descripcion" rows="4" cols="20"></textarea>
         <br/><br/>
         <label for="entrada">Fecha Entrada:</label>
-        <input type="text" name="entrada" value="<?php echo date('Y-m-d') ?>" />
+        <input type="date" name="entrada" value="<?php echo date('Y-m-d') ?>" />
         <br/><br/>
         <label for="status">Estado:</label>
         <select name="status">
