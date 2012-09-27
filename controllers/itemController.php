@@ -25,16 +25,16 @@ function showAddItem() {
     inc();
     require VIEW_PATH . 'itemAddForm.php';
 }
-
+/*
 function showAdded() {
     inc();
     require VIEW_PATH . 'itemShowAdded.php';
 }
-
+*/
 function insertItem() {
     inc();
     if (insert()) {
-        header('Location: index.php?c=item&a=showAdded');
+        header('Location: index.php?c=item&a=showPending');
     }
     echo 'error';
 }
