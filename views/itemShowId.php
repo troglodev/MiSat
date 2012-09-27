@@ -40,6 +40,8 @@ if ($items != 0) {
                 <textarea name="info" rows="4" cols="20"><?php $item['info'] ?></textarea>
                 <br/><br/>
                 <input type="submit" value="Guardar"/>
+                <br/>
+                <br/>
             </form>
         </div>
         <?php
