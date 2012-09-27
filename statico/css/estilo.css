@@ -1,29 +1,26 @@
 /**Colorines*/
-.black{
-    background:36393D;
-    display:block;
-    color:white;
-}
-.red, .blue,.green,.yellow,.orange{display:block;text-indent: 10px;}
-.black2,.red2,.blue2,.green2,.orange2,.yellow2{background:36393D;}
+.black{background:#36393D;display:block;color:white;}
 
-.red{border-left: 20px solid FF7575;}
-.blue{border-left: 20px solid AD8BFE;}
-.green{border-left: 20px solid ABFF73;}
-.yellow{border-left: 20px solid FFFF84;}
-.orange{border-left: 20px solid FF7400;}
+.red, .blue,.green,.yellow,.orange{display:block;text-indent: 10px;}
+.black2,.red2,.blue2,.green2,.orange2,.yellow2{background:#36393D;}
+
+.red{border-left: 20px solid #FF7575;}
+.blue{border-left: 20px solid #AD8BFE;}
+.green{border-left: 20px solid #ABFF73;}
+.yellow{border-left: 20px solid #FFFF84;}
+.orange{border-left: 20px solid #FF7400;}
 
 .black2{color:white;}
-.red2{color:FF7575;}
-.blue2{color:AD8BFE;}
-.green2{color: ABFF73;}
-.orange2{color:FF7400;}
-.yellow2{color: FFFF84;}
+.red2{color:#FF7575;}
+.blue2{color:#AD8BFE;}
+.green2{color:#ABFF73;}
+.orange2{color:#FF7400;}
+.yellow2{color:#FFFF84;}
 
 /**viejos*/
 
 body{
-    background:EEEEEE;
+    background:#EEEEEE;
     font-family: arial,sans-serif;
     margin:0;
     padding:0;
@@ -36,9 +33,9 @@ body{
 }
 
 #menu1, #menu2, #titulo{
-    background: 36393D;
-    border-right:4px solid 65635D;
-    border-left:4px solid 65635D;
+    background: #36393D;
+    border-right:4px solid #65635D;
+    border-left:4px solid #65635D;
 }
 
 #menu1, #menu2{margin:0 auto;}
@@ -69,9 +66,9 @@ body{
 }
 #menu2 ul li a:hover,#menu1 ul li a:hover{
     display: block;
-    background: 65635D;
+    background: #65635D;
     height: 30px;
-    border-bottom: 4px solid 36393D;
+    border-bottom: 4px solid #36393D;
 }
 
 #caja li{
@@ -111,7 +108,7 @@ img {
     text-align: left;
     padding-left: 50px;
     width:60%;
-    background: 36393D;
+    background: #36393D;
     font-weight: bold;
     color:white;
 }
