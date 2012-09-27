@@ -77,15 +77,16 @@ body{
     border-bottom: 4px solid #36393D;
 }
 
-#caja li{
+#caja ul{
+    margin:0;
+    padding: 0;
     list-style: none;
     text-align: left;
 }
-#caja li ul{
-    padding:0;
-    margin:0;
+#caja ul li{
+
 }
-#caja li ul a{
+#caja ul li a{
     padding-top: 2px;
 }
 
