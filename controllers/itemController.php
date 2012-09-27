@@ -6,6 +6,7 @@ require INC_PATH . HTML_TITULO;
 require INC_PATH . HTML_PIE;
 require INC_PATH . HTML_ITEMS;
 require INC_PATH . HTML_ITEM;
+require INC_PATH . HTML_FORM;
 require MODELS_PATH . MODELS_ITEM;
 @session_start();
 

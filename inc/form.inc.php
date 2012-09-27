@@ -13,7 +13,7 @@ function show_form() {
             <select name="cat">
                 <option value="Sobremesa">Sobremesa</option>
                 <option value="Portatil">Portatil</option>
-                <option value="Móvil">Móvil</option>
+                <option value="Movil">Móvil</option>
                 <option value="Consola">Consola</option>
             </select>
             <br/><br/>
