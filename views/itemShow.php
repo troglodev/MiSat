@@ -12,11 +12,11 @@ if ($items != 0) {
 
         echo'<ul>';
         if ($c % 2 == 0) {
-            echo '<a style="background:36363B" class="';
+            echo '<a style="background:#36363B" class="';
             echo $color[$item['status']];
             echo '" href="index.php?c=item&a=showId&id=' . $item['id'] . '">';
         } else {
-            echo '<a style="background:48474C" class="';
+            echo '<a style="background:#48474C" class="';
             echo $color[$item['status']];
             echo '" href="index.php?c=item&a=showId&id=' . $item['id'] . '">';
         }
