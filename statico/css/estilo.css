@@ -39,8 +39,8 @@ body{
 
 #menu1, #menu2, #titulo{
     background: #36393D;
-    border-right:4px solid #65635D;
-    border-left:4px solid #65635D;
+    border-right:10px solid #65635D;
+    border-left:10px solid #65635D;
 }
 
 #menu1, #menu2{margin:0 auto;}
