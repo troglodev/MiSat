@@ -1,6 +1,7 @@
 <?php
 show_head();
 show_menu();
+show_title(6, null);
 ?>
 <div id="formu">
     <form name="deseo" action="index.php?c=item&a=insertItem"
