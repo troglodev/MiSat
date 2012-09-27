@@ -29,5 +29,6 @@
         const HTML_HEAD = 'head.inc.php';
         const HTML_MENU = 'menu.inc.php';
         const HTML_PIE = 'pie.inc.php';
-        const HTML_ITEMS='items.inc.php';
-        const HTML_ITEM='item.inc.php';
+        const HTML_ITEMS = 'items.inc.php';
+        const HTML_ITEM = 'item.inc.php';
+        const HTML_FORM = 'form.inc.php';
