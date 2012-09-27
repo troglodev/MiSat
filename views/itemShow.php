@@ -2,7 +2,7 @@
 
 mostrarHead();
 mostrarMenu();
-mostrarTitulo($op, count($items));
+mostrarTitulo($status, count($items));
 
 $color = array("blue", "green", "orange", "yellow", "red", "black");
 echo '<div id="caja"><li>';
@@ -21,7 +21,7 @@ if ($items != 0) {
             echo '" href="index.php?c=item&a=showId&id=' . $item['id'] . '">';
         }
         echo $item['id'] . ' ';
-        echo $item['cat'] . ' ';
+        echo '(' . $item['cat'] . ') ';
         echo $item['desc'];
         echo '</a>';
         echo '</ul>';

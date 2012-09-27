@@ -6,27 +6,27 @@ function mostrarMenu() {
         <h3>
             <ul>
                 <li>
-                    <a href="index.php?c=item&a=showPending">
+                    <a href="index.php?c=item&a=show&s=4">
                     <img src="statico/img/cross.png" />Pendientes  </a>
                 </li>
                 <li>
-                    <a href="index.php?c=item&a=showWaiting">
+                    <a href="index.php?c=item&a=show&s=3">
                     <img src="statico/img/clock.png" />Esperando</a>
                 </li>
                 <li>
-                    <a href="index.php?c=item&a=showWorking">
+                    <a href="index.php?c=item&a=show&s=2">
                     <img src="statico/img/wrench_orange.png" />Reparando</a>
                 </li>
                 <li>
-                    <a href="index.php?c=item&a=showTested">
+                    <a href="index.php?c=item&a=show&s=1">
                     <img src="statico/img/accept.png" />Avisados</a>
                 </li>
                 <li>
-                    <a href="index.php?c=item&a=showReleased">
+                    <a href="index.php?c=item&a=show&s=0">
                     <img src="statico/img/world_go.png" />Entregados</a>
                 </li>
                 <li>
-                    <a href="index.php?c=item&a=showAll">
+                    <a href="index.php?c=item&a=show&s=5">
                     <img src="statico/img/asterisk_orange.png" />Todos</a>
                 </li>
             </ul>

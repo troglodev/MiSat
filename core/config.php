@@ -14,7 +14,7 @@
 
 //******DEFAULTS
         const DEFAULT_CONTROLLER = "item";
-        const DEFAULT_ACTION = "showPending";
+        const DEFAULT_ACTION = "show";
 
 //******MODELS
         const MODELS_ITEM = 'itemModel.php';

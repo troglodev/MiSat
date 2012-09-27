@@ -44,6 +44,7 @@ body{
 }
 
 #titulo img{
+    height: 20px; 
     float:right;
     padding:10px 10px 0 0;
 }
@@ -100,7 +101,7 @@ a:hover{
 }
 
 img {
-    /**vertical-align: middle;*/
+        
 }
 
 #formu{

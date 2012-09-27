@@ -22,6 +22,6 @@ else
     die('El controlador <b>' . $controller . '</b> no existe - 404 not found');
 
 if (is_callable($accion))
-    $accion();
+    $accion(4);
 else
     die('La accion <b>' . $accion . '</b> no existe - 404 not found');
