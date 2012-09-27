@@ -24,7 +24,7 @@ function insert() {
 function change() {
     require RUTA_DBH;
 
-    $desc = $_POST['desc'];
+    $desc = $_POST['descripcion'];
     $status = $_POST['status'];
     $info = $_POST['info'];
     $salida = $_POST['salida'];

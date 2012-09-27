@@ -26,6 +26,27 @@ function validarNuevo(Form){
     }
     return true;
 }
+
+function validarEdicion(Form){
+    id=Form.id.value.toString();
+    desc=Form.descripcion.value.toString();
+    entrada=Form.entrada.value.toString();
+    
+    id_clean=id.replace(/ /g,'');
+    desc_clean=desc.replace(/ /g,'');
+    
+    if (id=='' || id_clean=='' || desc==''|| desc_clean==''){
+        show_message('Rellene todos los campos.');
+        return false;
+    }
+    
+    if (isNaN(id) || (id*10)%10!=0){
+        alert('id='+id)
+        show_message('ID debe ser un número.');
+        return false;
+    }
+    return true;    
+}
     
     //
     //

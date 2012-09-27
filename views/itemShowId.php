@@ -10,7 +10,7 @@ if ($items != 0) {
         ?>
         <div id="formu">
             <form name="deseo" action="index.php?c=item&a=changeItem"
-                  method="POST" onsubmit="return validarDeseo(this);">
+                  method="POST" onsubmit="return validarEdicion(this);">
                 <br/>
                 <label for="id">Albarán:</label>
                 <input type="text" name="id" value="<?php echo $item['id']; ?>">
@@ -21,8 +21,8 @@ if ($items != 0) {
                 <label for="entrada">Fecha Entrada:</label>
                 <input type="text" name="entrada" value="<?php echo $item['fecha_entrada']; ?>">
                 <br/><br/>
-                <label for="desc">Descripción:</label>
-                <textarea name="desc" rows="4" cols="20"><?php echo $item['desc']; ?></textarea>
+                <label for="descripcion">Descripción:</label>
+                <textarea name="descripcion" rows="4" cols="20"><?php echo $item['desc']; ?></textarea>
                 <br/><br/>
                 <label for="status">Estado:</label>
                 <select name="status">
@@ -40,6 +40,7 @@ if ($items != 0) {
                 <textarea name="info" rows="4" cols="20"><?php $item['info'] ?></textarea>
                 <br/><br/>
                 <input type="submit" value="Guardar"/>
+                <div id="falloDeseo"> </div>
                 <br/>
                 <br/>
             </form>
