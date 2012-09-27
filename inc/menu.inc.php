@@ -7,15 +7,15 @@ function show_menu() {
             <ul>
                 <li>
                     <a href="index.php?c=item&a=show&s=4">
-                    <img src="statico/img/cross.png" />Pendientes  </a>
+                    <img src="statico/img/cross.png" />Pendientes</a>
                 </li>
                 <li>
                     <a href="index.php?c=item&a=show&s=3">
-                    <img src="statico/img/clock.png" />Esperando</a>
+                    <img src="statico/img/clock.png" />Reparando</a>
                 </li>
                 <li>
                     <a href="index.php?c=item&a=show&s=2">
-                    <img src="statico/img/wrench_orange.png" />Reparando</a>
+                    <img src="statico/img/wrench_orange.png" />Esperando</a>
                 </li>
                 <li>
                     <a href="index.php?c=item&a=show&s=1">

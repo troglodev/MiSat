@@ -1,7 +1,7 @@
 <?php
 
 function show_items($items) {
-    $color = array('blue', 'green', 'orange', 'yellow', 'red', 'black');
+    $color = array('blue', 'green', 'yellow', 'orange', 'red', 'black');
     $c = 0;
 
     echo '<div id="caja"><ul>';
@@ -17,7 +17,7 @@ function show_items($items) {
             echo '" class="' . $color[$item['status']];
             echo '" href="index.php?c=item&a=showId&id=' . $item['id'] . '">';
             echo $item['id'] . ' ';
-            echo '-' . $item['cat'] . '- ';
+            echo '  |  ' . $item['cat'] . '  |  ';
             echo $item['desc'];
             echo '</a>';
             echo '</li>';
