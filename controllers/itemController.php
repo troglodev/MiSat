@@ -4,6 +4,7 @@ require INC_PATH . HTML_HEAD;
 require INC_PATH . HTML_MENU;
 require INC_PATH . HTML_TITULO;
 require INC_PATH . HTML_PIE;
+require INC_PATH . HTML_ITEMS;
 require MODELS_PATH . MODELS_ITEM;
 @session_start();
 
