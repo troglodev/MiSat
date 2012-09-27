@@ -45,18 +45,6 @@ function change() {
     }
     return false;
 
-    /*
-      $sql = "update wishes set " . $set . " where " . $cond;
-      $num = $dbh->exec($sql);
-      disconnectDBH($dbh);
-      if ($num == 1) {
-      return true;
-      }
-      return false;
-      $set = "`desc`='" . $_POST['descripcion'] . "', `date`='" . date_format(new DateTime($_POST['fecha']), 'Y-m-d') . "'";
-      $cond = 'id=' . $_GET['id'];
-      return updateWish($set, $cond);
-     */
 }
 
 function select($cond) {
