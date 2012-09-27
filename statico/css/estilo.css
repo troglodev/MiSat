@@ -43,6 +43,10 @@ body{
     border-left:10px solid #65635D;
 }
 
+#titulo{
+    
+}
+
 #menu1, #menu2{margin:0 auto;}
 
 #caja{
@@ -53,7 +57,6 @@ body{
     float:right;
     padding:10px 10px 0 0;
 }
-
 #menu2 ul,#menu1 ul{
     height:40px;
 }
@@ -64,12 +67,12 @@ body{
 }
 
 #menu2 ul li img{
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 #menu2 ul li a,#menu1 ul li a{
     color:white;
-    padding:  10px 5px 0px 5px;
+    padding:  10px 7px 0px 7px;
     text-align: center;
     display: block;
     margin: 0 7px;
@@ -92,8 +95,8 @@ body{
 }
 
 #caja ul li a{
+    height:28px;
     padding-top: 5px;
-    height:26px;
 }
 
 h1{

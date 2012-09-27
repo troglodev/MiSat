@@ -2,6 +2,11 @@
 
 require 'core/config.php';
 
+$browser = get_browser(null, true);
+
+if ($browser['browser'] == 'IE')
+    die('Aplicación no disponible para Internet Explorer');
+
 //Controlador
 if (!empty($_GET['c']))
     $controller = $_GET['c'];
