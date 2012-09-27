@@ -43,7 +43,7 @@ function select($cond) {
 function get($op) {
     if ($op > 4) {
         //$cond = 1;
-        $cond= 'misat.status>0';
+        $cond = 'misat.status>0';
         return select($cond);
     }
     $cond = 'misat.status=' . $op;
@@ -61,6 +61,8 @@ function getId($id) {
 
 function prepare_update($post) {
     $set = "`desc`='" . $post['descripcion'] . "', ";
+    $set.= "`id`='" . $post['id'] . "', ";
+    $set.= "`cat`='" . $post['cat'] . "', ";
     $set.= "`status`=" . $post['status'] . ", ";
     $set.="`info`='" . $post['info'] . "', ";
     $set.="`fecha_salida`='" . $post['salida'] . "' ";

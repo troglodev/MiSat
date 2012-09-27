@@ -9,17 +9,17 @@
 }
 .black2,.red2,.blue2,.green2,.orange2,.yellow2{background:#36393D;}
 
-.red{border-left-color:  #FF7575;}
+.red{border-left-color:  #ED0048;}
 .blue{border-left-color:  #689AD3;}
 .green{border-left-color:  #81F224;}
 .yellow{border-left-color:  #FFFF84;}
-.orange{border-left-color:  #BCA11F;}
+.orange{border-left-color:  #FFAB25;}
 
 .black2{color:white;}
-.red2{color:#FF7575;}
+.red2{color:#ED0048;}
 .blue2{color:#689AD3;}
 .green2{color:#81F224;}
-.orange2{color:#BCA11F;}
+.orange2{color:#FFAB25;}
 .yellow2{color:#FFFF84;}
 
 /**viejos*/
@@ -53,16 +53,20 @@ body{
     float:right;
     padding:10px 10px 0 0;
 }
+
 #menu2 ul,#menu1 ul{
     height:40px;
 }
+
 #menu2 ul li,#menu1 ul li {
     float:left;
     list-style: none;
 }
+
 #menu2 ul li img{
     margin-right: 10px;
 }
+
 #menu2 ul li a,#menu1 ul li a{
     color:white;
     padding:  10px 5px 0px 5px;
@@ -86,6 +90,7 @@ body{
 #caja ul li{
 
 }
+
 #caja ul li a{
     padding-top: 2px;
 }
