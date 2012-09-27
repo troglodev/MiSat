@@ -7,9 +7,12 @@ function insert() {
     $id = $_POST['id'];
     $desc = $_POST['descripcion'];
     $entrada = $_POST['entrada'];
-    $status = 4;
-    $sql = "INSERT INTO misat (`id`, `desc`,`fecha_entrada`,`status`) values ($id,'$desc','$entrada',$status)";
+    $status = $_POST['status'];
+    $cat = $_POST['cat'];
+    $sql = "INSERT INTO misat (`id`, `desc`,`status`,`fecha_entrada`,`cat`)
+            values ($id,'$desc',$status,'$entrada','$cat')";
     $num = $dbh->exec($sql);
+    print_r($dbh->ErrorInfo());
     disconnectDBH($dbh);
 
     if ($num == 1) {
@@ -28,13 +31,14 @@ function change() {
     $id = $_POST['id'];
 
     $set = "`desc`='" . $desc . "', ";
-    $set = "`status`='" . $status . "', ";
+    $set.= "`status`='" . $status . "', ";
     $set.="`info`='" . $info . "', ";
     $set.="`fecha_salida`='" . $salida . "' ";
     $cond = "`id` = $id";
 
     $sql = "UPDATE misat SET " . $set . "WHERE " . $cond;
     $num = $dbh->exec($sql);
+    //print_r($sql);
     disconnectDBH($dbh);
 
     if ($num == 1) {

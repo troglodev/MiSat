@@ -40,6 +40,8 @@ function insertItem() {
 }
 
 //*********************CHANGE
+
+/**
 function showChangeItem() {
     inc();
     require VIEW_PATH . 'itemChangeForm.php';
@@ -49,7 +51,7 @@ function showChanged() {
     inc();
     require VIEW_PATH . 'itemShowChanged.php';
 }
-
+*/
 function changeItem() {
     inc();
     if (change()) {

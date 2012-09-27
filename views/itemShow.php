@@ -21,7 +21,7 @@ if ($items != 0) {
             echo '" href="index.php?c=item&a=showId&id=' . $item['id'] . '">';
         }
         echo $item['id'] . ' ';
-        echo $item['status'] . ' ';
+        echo $item['cat'] . ' ';
         echo $item['desc'];
         echo '</a>';
         echo '</ul>';
