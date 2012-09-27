@@ -1,18 +1,23 @@
 /**Colorines*/
 .black{background:#36393D;display:block;color:white;}
 
-.red, .blue,.green,.yellow,.orange{display:block;text-indent: 10px;}
+.red,.blue,.green,.yellow,.orange{
+    display:block;
+    text-indent: 10px;
+    border-left-style: solid;
+    border-left-width: 10px
+}
 .black2,.red2,.blue2,.green2,.orange2,.yellow2{background:#36393D;}
 
-.red{border-left: 20px solid #FF7575;}
-.blue{border-left: 20px solid #AD8BFE;}
-.green{border-left: 20px solid #ABFF73;}
-.yellow{border-left: 20px solid #FFFF84;}
-.orange{border-left: 20px solid #FF7400;}
+.red{border-left-color:  #FF7575;}
+.blue{border-left-color:  #689AD3;}
+.green{border-left-color:  #ABFF73;}
+.yellow{border-left-color:  #FFFF84;}
+.orange{border-left-color:  #FF7400;}
 
 .black2{color:white;}
 .red2{color:#FF7575;}
-.blue2{color:#AD8BFE;}
+.blue2{color:#689AD3;}
 .green2{color:#ABFF73;}
 .orange2{color:#FF7400;}
 .yellow2{color:#FFFF84;}
@@ -101,7 +106,7 @@ a:hover{
 }
 
 img {
-        
+
 }
 
 #formu{
