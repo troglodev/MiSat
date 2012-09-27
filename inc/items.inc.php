@@ -16,6 +16,9 @@ function show_items($items) {
             }
             echo '" class="' . $color[$item['status']];
             echo '" href="index.php?c=item&a=showId&id=' . $item['id'] . '">';
+            if ($item['status']==0){
+                echo $item['fecha_salida'] . '  |  '; 
+            }
             echo $item['id'] . ' ';
             echo '  |  ' . $item['cat'] . '  |  ';
             echo $item['desc'];

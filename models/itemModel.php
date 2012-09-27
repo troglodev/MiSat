@@ -85,7 +85,7 @@ function prepare_insert($post) {
 function prepare_select($cond) {
     $orderby = 'misat.fecha_entrada desc';
     $sql = 'SELECT misat.id, misat.desc, misat.status, 
-        misat.cat, misat.fecha_entrada, misat.info FROM misat
+        misat.cat, misat.fecha_entrada, misat.info, misat.fecha_salida FROM misat
         where ' . $cond . ' ORDER BY ' . $orderby;
     return $sql;
 }
