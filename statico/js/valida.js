@@ -1,3 +1,58 @@
+function show_message(mensaje){
+    var html1='<span style="float:right;margin-right:10px;color:salmon">'+
+    '<img src="statico/img/delete.png" />&nbsp;';
+    var html2= '</span>';
+    
+    document.getElementById("falloDeseo").innerHTML=html1+mensaje+html2;
+}
+
+function validarNuevo(Form){
+    id=Form.id.value.toString();
+    desc=Form.descripcion.value.toString();
+    entrada=Form.entrada.value.toString();
+    
+    id_clean=id.replace(/ /g,'');
+    desc_clean=desc.replace(/ /g,'');
+    
+    if (id=='' || id_clean=='' || desc==''||desc_clean==''){
+        show_message('Rellene todos los campos.');
+        return false;
+    }
+    
+    if (isNaN(id) || (id*10)%10!=0){
+        alert('id='+id)
+        show_message('ID debe ser un número.');
+        return false;
+    }
+    return true;
+}
+    
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //document.getElementById("falloDeseo").innerHTML=html1+'Rellene todos los campos'+html2
+    //fecha=F.fecha.value
+    //descripcion=F.descripcion.value
+    //alert(fecha+'-'+descripcion)
+    //mensaje=''
+    /*
+    var cadena=id.toString()
+    alert(id);
+    cadena=cadena.replace(" ", "");
+    if (cadena==""){
+        mensaje="Rellene todos los campos.";
+        alert('message');
+        return false;
+    }*/
+
+
+    /*
 var mensaje= ""
 var html1='<span style="float:right;margin-right:10px;border-radius: 0.7em;background:salmon">'+
 '<img src="statico/img/delete.png" />&nbsp;'
@@ -142,3 +197,5 @@ function fechaCorrecta(fecha){
     }
     return true
 }
+
+     */

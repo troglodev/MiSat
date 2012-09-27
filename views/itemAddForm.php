@@ -5,10 +5,11 @@ show_title(6, null);
 ?>
 <div id="formu">
     <form name="deseo" action="index.php?c=item&a=insertItem"
-          method="POST" onsubmit="return validarDeseo(this);">
+          method="POST" onsubmit="return validarNuevo(this);">
         <br/>
         <label for="id">Albarán:</label>
-        <input type="text" name="id" />
+        <input type="text" name="id">
+
         <br/><br/>
         <label for="cat">Categoría:</label>
         <select name="cat">
@@ -34,7 +35,9 @@ show_title(6, null);
         </select>
         <br/><br/>
         <input type="submit" value="Añadir"/>
+        <div id="falloDeseo"> </div>
         <br/>
         <br/>
+        
     </form>
 </div>
