@@ -8,7 +8,6 @@ function insert() {
     $num = $dbh->exec($sql);
     print_r($dbh->ErrorInfo());
     disconnectDBH($dbh);
-
     if ($num == 1) {
         return true;
     }
@@ -19,13 +18,13 @@ function change() {
     require RUTA_DBH;
     $sql = prepare_update($_POST);
     $num = $dbh->exec($sql);
-    print_r($sql);
+    //print_r($sql);
     disconnectDBH($dbh);
-
     if ($num == 1) {
         return true;
     }
-    return false;
+    //echo 'No se ha actualizado nada.';
+    return true;
 }
 
 function select($cond) {
@@ -41,33 +40,13 @@ function select($cond) {
     return null;
 }
 
-function getPending() {
-    $cond = 'misat.status=4';
-    return select($cond);
-}
-
-function getWaiting() {
-    $cond = 'misat.status=3';
-    return select($cond);
-}
-
-function getWorking() {
-    $cond = 'misat.status=2';
-    return select($cond);
-}
-
-function getTested() {
-    $cond = 'misat.status=1';
-    return select($cond);
-}
-
-function getReleased() {
-    $cond = 'misat.status=0';
-    return select($cond);
-}
-
-function getAll() {
-    $cond = '1';
+function get($op) {
+    if ($op > 4) {
+        //$cond = 1;
+        $cond= 'misat.status>0';
+        return select($cond);
+    }
+    $cond = 'misat.status=' . $op;
     return select($cond);
 }
 
@@ -76,11 +55,13 @@ function getId($id) {
     return select($cond);
 }
 
-/* * *CONSULTAS */
+/*
+ * CONSULTAS
+ */
 
 function prepare_update($post) {
     $set = "`desc`='" . $post['descripcion'] . "', ";
-    $set.= "`status`='" . $post['status'] . "', ";
+    $set.= "`status`=" . $post['status'] . ", ";
     $set.="`info`='" . $post['info'] . "', ";
     $set.="`fecha_salida`='" . $post['salida'] . "' ";
     $cond = '`id` = ' . $post['id'];
@@ -101,8 +82,8 @@ function prepare_insert($post) {
 
 function prepare_select($cond) {
     $orderby = 'misat.fecha_entrada desc';
-    $sql = 'select misat.id, misat.desc, misat.status, 
-        misat.cat, misat.fecha_entrada, misat.info from misat
+    $sql = 'SELECT misat.id, misat.desc, misat.status, 
+        misat.cat, misat.fecha_entrada, misat.info FROM misat
         where ' . $cond . ' ORDER BY ' . $orderby;
     return $sql;
 }

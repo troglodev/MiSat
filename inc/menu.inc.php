@@ -27,7 +27,7 @@ function show_menu() {
                 </li>
                 <li>
                     <a href="index.php?c=item&a=show&s=5">
-                    <img src="statico/img/asterisk_orange.png" />Todos</a>
+                    <img src="statico/img/asterisk_orange.png" />Activos</a>
                 </li>
             </ul>
         </h3>

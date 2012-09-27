@@ -16,14 +16,14 @@ function showAddItem() {
 function insertItem() {
     if (insert())
         header('Location: index.php?c=item&a=show&s=4');
-    echo 'error';
+    //echo 'error';
 }
 
 //*********************CHANGE
 function changeItem() {
     if (change())
         header('Location: index.php');
-    echo 'error';
+    //echo 'error';
 }
 
 //*********************SHOW
@@ -33,28 +33,11 @@ function show() {
     } else {
         $status = 4;
     }
-    $items = select_item_to_show($status);
+    $items = get($status);
     require VIEW_PATH . 'itemShow.php';
 }
 
 function showId() {
     $items = getId($_GET['id']);
     require VIEW_PATH . 'itemShowId.php';
-}
-
-function select_item_to_show($status) {
-    switch ($status) {
-        case 0:
-            return getReleased();
-        case 1:
-            return getTested();
-        case 2:
-            return getWorking();
-        case 3:
-            return getWaiting();
-        case 4:
-            return getPending();
-        case 5:
-            return getAll();
-    }
 }

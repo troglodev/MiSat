@@ -4,7 +4,7 @@ function show_title($op, $num) {
     $color = array('blue', 'green', 'orange', 'yellow', 'red', 'black',
         'black', 'black');
     $titulo = array('Entregados: ', 'Avisados: ', 'En Proceso: ',
-        'Esperando Confirmación: ', 'Pendientes: ', 'Todos: ', 'Añadir: ',
+        'Esperando Confirmación: ', 'Pendientes: ', 'Activos: ', 'Añadir: ',
         'Editar: ');
 
     echo '<div id="titulo">';
