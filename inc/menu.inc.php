@@ -1,6 +1,6 @@
 <?php
 
-function mostrarMenu() {
+function show_menu() {
     ?>
     <div id="menu2">
         <h3>

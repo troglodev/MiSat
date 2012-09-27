@@ -1,6 +1,6 @@
 <?php
 
-function mostrarHead() {
+function show_head() {
     ?>
     <html>
         <head>

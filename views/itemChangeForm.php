@@ -1,5 +1,5 @@
 <?php
-mostrarHead();
+show_head();
 foreach ($items as $item) {
     ?>
     <form name="deseo" action="index.php?controlador=deseo&accion=modificarDeseo&id=<?php echo $item['id'] ?>"

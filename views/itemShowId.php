@@ -1,6 +1,6 @@
 <?php
-mostrarHead();
-mostrarMenu();
+show_head();
+show_menu();
 echo '<br/>';
 echo '';
 
@@ -47,6 +47,6 @@ if ($items != 0) {
         echo '';
     }
 }
-mostrarPie();
+show_footer();
 ?>
 

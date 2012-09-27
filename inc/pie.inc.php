@@ -1,6 +1,6 @@
 <?php
 
-function mostrarPie() {
+function show_footer() {
     ?>
 <!--
     <div id="pie">

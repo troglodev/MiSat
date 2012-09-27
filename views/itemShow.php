@@ -1,8 +1,8 @@
 <?php
 
-mostrarHead();
-mostrarMenu();
-mostrarTitulo($status, count($items));
+show_head();
+show_menu();
+show_title($status, count($items));
 show_items($items);
-mostrarPie();
+show_footer();
 ?>

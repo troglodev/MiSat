@@ -1,6 +1,6 @@
 <?php
 
-function mostrarTitulo($op, $num) {
+function show_title($op, $num) {
     $color = array('blue', 'green', 'orange', 'yellow', 'red', 'black');
     $titulo = array('Entregados: ', 'Avisados: ', 'En Proceso: ',
         'Esperando Confirmación: ', 'Pendientes: ', 'Todos: ');
