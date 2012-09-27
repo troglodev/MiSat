@@ -1,58 +1,32 @@
-/**
-nuevos
-*/
+/**Colorines*/
 .black{
     background:36393D;
     display:block;
     color:white;
 }
-.black2{background:36393D;color:white;}
-.red2{background:36393D;color:FF7575;}
-.blue2{background:36393D;color:AD8BFE;}
-.green2{background:36393D;color: ABFF73;}
-.orange2{background:36393D;color:FF7400;}
-.yellow2{background:36393D;color: FFFF84;}
+.red, .blue,.green,.yellow,.orange{display:block;text-indent: 10px;}
+.black2,.red2,.blue2,.green2,.orange2,.yellow2{background:36393D;}
 
-.red{
-    border-left: 20px solid FF7575;
-    text-indent: 10px;
-    display:block;
-}
-.blue{
-    border-left: 20px solid AD8BFE;
-    display:block;
-    text-indent: 10px;
-}
+.red{border-left: 20px solid FF7575;}
+.blue{border-left: 20px solid AD8BFE;}
+.green{border-left: 20px solid ABFF73;}
+.yellow{border-left: 20px solid FFFF84;}
+.orange{border-left: 20px solid FF7400;}
 
-.green{
-    border-left: 20px solid ABFF73;
-    display:block;
-    text-indent: 10px;
-}
+.black2{color:white;}
+.red2{color:FF7575;}
+.blue2{color:AD8BFE;}
+.green2{color: ABFF73;}
+.orange2{color:FF7400;}
+.yellow2{color: FFFF84;}
 
-.yellow{
-    border-left: 20px solid FFFF84;
-    display:block;
-    text-indent: 10px;
-}
-
-.orange{
-    border-left: 20px solid FF7400;
-    display:block;
-    text-indent: 10px;
-}
-
-/**
-
-viejos
-*/
+/**viejos*/
 
 body{
     background:EEEEEE;
     font-family: arial,sans-serif;
     margin:0;
     padding:0;
-
 }
 
 #pagina{
@@ -61,33 +35,17 @@ body{
     margin: 0 auto;
 }
 
-#menu1{
-    /**border: 1px solid black;*/
-    margin:0 auto;
-
+#menu1, #menu2, #titulo{
     background: 36393D;
     border-right:4px solid 65635D;
     border-left:4px solid 65635D;
 }
 
-#menu2{
-    /**border: 1px solid black;*/
-    background: 36393D;
-    margin:0 auto;
-    border-right:4px solid 65635D;
-    border-left:4px solid 65635D;
-}
+#menu1, #menu2{margin:0 auto;}
 
-#titulo{
-
-    background: 36393D;
-
-    border-right:4px solid 65635D;
-    border-left:4px solid 65635D;
-}
 #caja{
-
 }
+
 #titulo img{
     float:right;
     padding:10px 10px 0 0;
@@ -123,10 +81,8 @@ body{
 #caja li ul{
     padding:0;
     margin:0;
-
 }
 #caja li ul a{
-   
     padding-top: 2px;
 }
 
@@ -136,11 +92,11 @@ h1{
 }
 
 a{
-    /** color:white;*/
     font-weight: bold;
     color:white;
     text-decoration: none;
 }
+
 a:hover{
     /*   background: EDDFFB;*/
     /**border-bottom:1px dotted white;*/
@@ -150,14 +106,6 @@ img {
     /**vertical-align: middle;*/
 }
 
-
-label{
-    float:left;
-    margin-right: 40px;
-    
-    width:140px;
-
-}
 #formu{
     margin: 0 auto;
     text-align: left;
@@ -165,15 +113,21 @@ label{
     width:60%;
     background: 36393D;
     font-weight: bold;
-        color:white;
+    color:white;
 }
 
 #formu input,#formu select, #formu textarea{
- font-weight: bold;
- width:150px;
+    font-weight: bold;
+    width:150px;
+}
+label{
+    float:left;
+    margin-right: 40px;
+    width:140px;
 }
 
 
+/**
 
 
 
@@ -183,6 +137,24 @@ label{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
 
 #content{
     /**    width:90%;
