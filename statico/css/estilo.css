@@ -92,7 +92,8 @@ body{
 }
 
 #caja ul li a{
-    padding-top: 2px;
+    padding-top: 5px;
+    height:26px;
 }
 
 h1{
