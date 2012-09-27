@@ -1,3 +1,3 @@
 <?php
 mostrarHead();
-?>hecho
+?>hecho.

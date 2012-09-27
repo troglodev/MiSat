@@ -21,30 +21,26 @@ function insert() {
 function change() {
     require RUTA_DBH;
 
+    $desc = $_POST['desc'];
     $status = $_POST['status'];
     $info = $_POST['info'];
     $salida = $_POST['salida'];
     $id = $_POST['id'];
 
-    $set = "`desc`='" . $_POST['desc'] . "', ";
-    $set = "`status`='" . $_POST['status'] . "', ";
-    $set.="`info`='" . $_POST['info'] . "', ";
-    $set.="`fecha_salida`='" . $_POST['salida'] . "' ";
-    //$set.= "``";
+    $set = "`desc`='" . $desc . "', ";
+    $set = "`status`='" . $status . "', ";
+    $set.="`info`='" . $info . "', ";
+    $set.="`fecha_salida`='" . $salida . "' ";
     $cond = "`id` = $id";
 
-    //"`desc`='" . $_POST['descripcion'] . "', `date`='" . date_format(new DateTime($_POST['fecha']), 'Y-m-d') . "'";
     $sql = "UPDATE misat SET " . $set . "WHERE " . $cond;
-    //  print_r($sql);
     $num = $dbh->exec($sql);
-    print_r($dbh->ErrorInfo());
     disconnectDBH($dbh);
 
     if ($num == 1) {
         return true;
     }
     return false;
-
 }
 
 function select($cond) {

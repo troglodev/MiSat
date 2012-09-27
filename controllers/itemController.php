@@ -2,14 +2,13 @@
 
 //require INC_PATH . HTML_ACCESO;
 //require INC_PATH . HTML_DERECHA;
-require INC_PATH . HTML_PIE;
 
 function incRequires() {
     require INC_PATH . HTML_HEAD;
     require INC_PATH . HTML_MENU;
     require INC_PATH . HTML_TITULO;
+    require INC_PATH . HTML_PIE;
     require MODELS_PATH . MODELS_ITEM;
-    
 }
 
 function incSession() {
